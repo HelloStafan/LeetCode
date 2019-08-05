@@ -1,4 +1,5 @@
-# 栈
+# 1.栈
+
 class Stack(object):  
 
     def __init__(self):
@@ -11,19 +12,18 @@ class Stack(object):
         return self.list.pop()
                 
     def top(self):
-         return self.list[-1]
+        return self.list[-1]
 
     def isEmpty(self):
     	return self.list == []
-
 
 class Solution:
 
 	def __init__(self):
 		self.stack = Stack()
-
+        
 	def isValid(self, string):  # 1.(){} 2.{[()]}  3.}()  4.({}
-		# s.split()
+		                        # s.split() ×
 		panduan = ('()','[]','{}')
 
 		for s in string:
@@ -41,8 +41,7 @@ class Solution:
 		else:
 			return False
 
-
-        
+# 测试项        
 StringList = ['(){}[]','{[()}','{()}([])','}()','({}','){}']
 
 for string in StringList:
@@ -50,7 +49,7 @@ for string in StringList:
 	print(solution.isValid(string))
 
 
-
+# 2.消除括号
 class Solution:
     def isValid(self, s: str) -> bool:
         while '()' in s  or '[]' in s or '{}' in s:

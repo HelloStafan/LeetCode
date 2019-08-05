@@ -30,7 +30,7 @@ class Solution:
 			if s in (')','}',']'):
 				if self.stack.isEmpty():
 					return False
-				elif (self.stack.pop()+s) in panduan:   # 左右对称，不是等于
+				elif (self.stack.pop()+s) in panduan:   # 左右对称，不是等于,
 					continue
 				else:
 					return False

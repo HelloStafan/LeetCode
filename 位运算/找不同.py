@@ -30,7 +30,7 @@ class Solution:
         # 1.利用集合set去重
         #return sum(set(nums))*2-sum(nums)
         
-        # 2. 异或操作考虑 a^b
+        # 2. 异或操作
         res=0
         #所有数字异或，两个相同的数字为1 1与单独的数字异或还为单独的数字
         for num in nums:
